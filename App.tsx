@@ -23,8 +23,8 @@ const App = () => {
  
 return (
     <NavigationContainer>
-      <Stack.Navigator>
-        {showSplashScreen ? 
+      <Stack.Navigator initialRouteName='Home'>
+        {/* {showSplashScreen ? 
           <Stack.Screen
             name="SplashScreen"
             component={SplahScreen}
@@ -35,9 +35,10 @@ return (
           name="Login"
           component={LoginScreen}
           options={{headerShown: false}}
-        />
+        /> */}
         <Stack.Screen name='Home' component={Home} />
       </Stack.Navigator>
+      
     </NavigationContainer>
   );
 };
